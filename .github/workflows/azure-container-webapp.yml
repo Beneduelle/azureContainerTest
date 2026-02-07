@@ -40,7 +40,8 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ghcr.io/beneduelle/azurecontainertest:${{ github.sha }}          file: ./Dockerfile
+          tags: ghcr.io/beneduelle/azurecontainertest:${{ github.sha }}
+          file: ./Dockerfile
 
   deploy:
     permissions:
