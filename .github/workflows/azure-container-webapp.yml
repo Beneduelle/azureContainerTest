@@ -11,7 +11,8 @@ on:
 
 permissions:
   id-token: write
-  contents: none
+  contents: read
+  pages: write
   packages: write
 
 jobs:
