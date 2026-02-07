@@ -35,7 +35,7 @@ jobs:
         uses: docker/build-push-action@v5 # v5.0.0
         with:
           push: true
-          tags: ghcr.io/${{ github.actor }}/azurecontainertest:${{ github.sha }}
+          tags: ghcr.io/${{ env.ACTOR_LC }}/azurecontainertest:${{ github.sha }}
           file: ./Dockerfile
 
   deploy:
